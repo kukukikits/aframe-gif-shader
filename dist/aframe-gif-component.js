@@ -546,6 +546,7 @@
 	    this.__height = THREE.Math.floorPowerOfTwo(frames[0].height);
 	    this.__cnv.width = this.__width;
 	    this.__cnv.height = this.__height;
+	    this.el.emit('gifready', { naturalWidth: frames[0].width, naturalHeight: frames[0].height });
 	    this.__draw();
 	    if (this.__autoplay) {
 	      this.play();

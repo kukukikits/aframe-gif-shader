@@ -1,3 +1,6 @@
+# 介绍
+针对项目进行了定制化
+
 # AFrame GIF Shader
 
 **A gif shader for [A-Frame](https://aframe.io) VR. Inspired by [@gtk2k](https://github.com/gtk2k)'s [awesome sample](https://github.com/gtk2k/gtk2k.github.io/tree/master/animation_gif).**
