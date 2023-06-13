@@ -1,6 +1,6 @@
 {
   "name": "aframe-gif-shader",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "A shader to display GIF for A-Frame VR.",
   "main": "dist/aframe-gif-shader.js",
   "scripts": {
@@ -9,7 +9,8 @@
     "dist": "webpack index.js dist/aframe-gif-component.js && webpack -p index.js dist/aframe-gif-component.min.js",
     "postpublish": "npm run dist",
     "preghpages": "npm run build && rm -rf gh-pages && cp -r examples gh-pages",
-    "ghpages": "npm run preghpages && ghpages -p gh-pages"
+    "ghpages": "npm run preghpages && ghpages -p gh-pages",
+    "publish": "npm publish --registry http://192.168.0.109:4873"
   },
   "repository": {
     "type": "git",

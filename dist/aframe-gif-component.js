@@ -113,6 +113,9 @@
 	    this.__material = {};
 	    this.__reset();
 	    this.material = new THREE.MeshBasicMaterial({ map: this.__texture });
+	    // when renderer.colorManagement is true on scene, we need correct textures color
+	    var rendererSystem = this.el.sceneEl.systems.renderer;
+	    rendererSystem.applyColorCorrection(this.material.map);
 	    this.el.sceneEl.addBehavior(this);
 	    return this.material;
 	  },
